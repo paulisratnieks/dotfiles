@@ -21,6 +21,7 @@ set visualbell
 """ Plugins
 set commentary
 set surround
+set multiple-cursors
 set highlightedyank
 let g:highlightedyank_highlight_color = "rgba(255, 142, 0, 90)"
 
@@ -35,3 +36,10 @@ nmap [e <Action>(GotoPreviousError)
 
 vmap <S-J> <Action>(MoveLineDown)
 vmap <S-K> <Action>(MoveLineUp)
+
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence

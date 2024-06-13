@@ -22,11 +22,22 @@ set visualbell
 set commentary
 set surround
 set multiple-cursors
+set NERDTree
 set highlightedyank
 let g:highlightedyank_highlight_color = "rgba(255, 142, 0, 90)"
 
 """ Remaps
+" Common
+nnoremap <silent> <C-l> :let @/ = ""<CR>:redraw<CR>
+
+" IDE
 nmap <leader>rf <Action>(RenameFile)
+map <leader>re <Action>(RenameElement)
+nmap <leader>bd <Action>(CloseEditor)
+map <leader>bb <Action>(ToggleLineBreakpoint)
+
+nmap <C-S-h> <Action>(PreviousTab)
+nmap <C-S-l> <Action>(NextTab)
 
 nmap ]c <Action>(VcsShowNextChangeMarker)
 nmap [c <Action>(VcsShowPrevChangeMarker)
@@ -37,6 +48,10 @@ nmap [e <Action>(GotoPreviousError)
 vmap <S-J> <Action>(MoveLineDown)
 vmap <S-K> <Action>(MoveLineUp)
 
+" NERDTree plugin
+map <leader>n :NERDTree<CR>
+
+" multiple-cursors plugin
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
 nmap g<C-n> <Plug>NextOccurrence

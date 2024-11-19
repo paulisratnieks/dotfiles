@@ -34,12 +34,16 @@ nnoremap <silent> <C-l> :let @/ = ""<CR>:redraw<CR>
 nmap <leader>rf <Action>(RenameFile)
 map <leader>re <Action>(RenameElement)
 nmap <leader>bd <Action>(CloseEditor)
+nmap <leader>bo <Action>(CloseAllEditorsButActive)
 map <leader>bb <Action>(ToggleLineBreakpoint)
 map <leader>t <Action>(SelectInProjectView)
 
 nmap mm <Action>(ToggleBookmark)
 nmap ma <Action>(ToggleBookmarkWithMnemonic)
 nmap ms <Action>(ShowBookmarks)
+
+nmap <C-A-h> <Action>(Back)
+nmap <C-A-l> <Action>(Forward)
 
 nmap <C-S-h> <Action>(PreviousTab)
 nmap <C-S-l> <Action>(NextTab)

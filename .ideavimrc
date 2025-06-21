@@ -4,7 +4,7 @@ let mapleader=" "
 set relativenumber
 set number
 set showmode
-set clipboard+=unnamed
+set clipboard=unnamedplus
 set scrolloff=5
 
 """ Idea
@@ -48,6 +48,12 @@ nmap <C-A-l> <Action>(Forward)
 nmap <C-S-h> <Action>(PreviousTab)
 nmap <C-S-l> <Action>(NextTab)
 
+nmap <leader>p <Action>(PinActiveTab)
+
+nmap <leader>a <Action>(GoToTab1)
+nmap <leader>s <Action>(GoToTab2)
+nmap <leader>d <Action>(GoToTab3)
+
 nmap ]c <Action>(VcsShowNextChangeMarker)
 nmap [c <Action>(VcsShowPrevChangeMarker)
 
@@ -67,3 +73,4 @@ nmap g<C-n> <Plug>NextOccurrence
 xmap g<C-n> <Plug>NextOccurrence
 xmap <C-x> <Plug>SkipOccurrence
 xmap <C-p> <Plug>RemoveOccurrence
+

@@ -50,9 +50,9 @@ nmap <C-S-l> <Action>(NextTab)
 
 nmap <leader>p <Action>(PinActiveTab)
 
-nmap <leader>a <Action>(GoToTab1)
-nmap <leader>s <Action>(GoToTab2)
-nmap <leader>d <Action>(GoToTab3)
+nmap <C-q> <Action>(GoToTab1)
+nmap <C-w> <Action>(GoToTab2)
+nmap <C-e> <Action>(GoToTab3)
 
 nmap ]c <Action>(VcsShowNextChangeMarker)
 nmap [c <Action>(VcsShowPrevChangeMarker)
